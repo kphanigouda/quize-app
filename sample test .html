@@ -1,0 +1,99 @@
+<h2 id ="msg"></h2>
+
+<script>
+    //arrow fumction (element ,values,array,parametesr)
+
+  let verb= (m,n)=>{
+    return  "its will playing"+m +"running ops"+n +""
+   // return  "code generate"
+  }
+  // console.log(verb())
+  // document.write(verb())
+   document.getElementById("msg").innerHTML=verb("virat","kl rahul")
+     
+
+    //global scope 
+
+   var x=10;
+   function verbs(){
+     var m="don"
+    console.log(m)
+   }
+    console.log(x)
+    verbs()
+       
+
+       // block scope :function insid ewill be presence ooutput
+          
+         function bumb(){
+            const y="kohli"
+             console.log(y)
+         }
+          
+         bumb()
+             //defalut parmeter:mainly one parametent passes to defule valu another value does not add value passes to console
+              let ground=(a,b=80)=>{
+                return a*b
+              }
+               console.log(ground("kohli"))
+              
+
+            //datatypes
+            //undefined =data tyope are not mentioned
+              let c;  //declare
+               console.log(c)
+                 //boolean
+               let f=10
+               let o=10
+                console.log(f==o)
+
+                let anti={
+                    name :"prani",
+                     age:60,
+                      location :"hyd",
+                      
+                       
+                }
+                 console.log(anti.name)
+                  document.write(anti.name)
+
+                    //map: total changwe
+                    let arr=[10,20,30,50,80]
+                    
+                      let arr2=arr.reduce(( element)=>{
+                         return element*2
+
+                      })
+                      console.log(arr2)
+                        
+                        // reduce :output presence one code
+                       const price=[2,30,53,60,87,70]
+                           
+                      const price2=price.reduce(mun)
+                       console.log(price2)
+                       function mun( acum,elem){
+                         return acum+elem
+                       }
+
+                       // foreach :
+
+                             
+                               let {names,age,place}=data
+                                console.log(names)
+
+
+                                  let datas=document.getElementById("msg")
+                                  setTimeout(()=>{
+                                     datas.addEventListener("click",function sum(){
+                                    alert("im worked")
+                                  })
+                                  },1000)
+                                 
+                                 
+                      
+
+
+
+                  
+      
+</script>
